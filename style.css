@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #48dbfb;
+}
+/*---------Data Form----------*/
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 400px;
+    height: 140px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    max-width: 300px;
+}
+.name-data{
+    padding-left: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 500;
+    font-size: large;    
+}
+.button-data{
+    padding: 5px 50px;
+    margin-top: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: large;
+    color: #fff;    
+    background-color: #48dbfb;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.button-data:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 3px solid #48dbfb;
+    color: #48dbfb;
+}
+.no-name{
+    display: none;
+    font-weight:200;
+    margin-top: 40px;
+    color: red;
+}
+/*--------Game----------*/
+.game{
+    display: none;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 450px;
+    height: 400px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.turns{
+    width: 90%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+.player{
+    width: 35%;
+    background-color: #48dbfb;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-weight: 500;
+    font-size: large;    
+}
+.table{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1%;
+}
+.box{
+    border-radius: 5px;
+    outline: none;
+    background-color: #18dcff;
+    font-size: 50px;
+}
