@@ -58,6 +58,5 @@ $boxes.forEach((e, index) => {
             gameplay();
             console.log($boxes[index]);
         }
-
     });
 });
