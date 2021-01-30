@@ -60,6 +60,7 @@ body{
     margin-top: 40px;
     color: red;
 }
+
 /*--------Game----------*/
 .game{
     display: none;
@@ -100,4 +101,80 @@ body{
     outline: none;
     background-color: #18dcff;
     font-size: 50px;
+}
+/*Winner Box*/
+.winner{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    width: 25%;
+    height: 25%;
+    border-radius: 10px;
+}
+.tittle-winner{
+    display: none;
+    text-align: center;
+}
+.pc{
+    display: none;
+}
+.button-winner{
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: large;
+    color: #fff;    
+    background-color: #48dbfb;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.button-winner:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 3px solid #48dbfb;
+    color: #48dbfb;
+}
+@media (max-width:620px){
+    .data{
+        width: 60%;
+    }
+    .tittle-data{
+        font-size: 24px;
+    }
+    .name-data{
+        width: 85%
+    }
+    .game{
+        width: 70%;
+        height: 55%;
+    }
+    .turns{
+        width: 100%;
+    }
+    .player{
+        width: 40%;
+        font-size:16px;
+    }
+    .no-name{
+        margin-top: 60px;
+       font-size: 18px;
+    }
+    .winner{
+        width: 75%;
+    }
+}
+@media (max-width:340px){
+    .tittle-data{
+        font-size: 19px;
+    }
+    .player{
+        font-size:13px;
+        font-weight: 500;
+    }
+    .winner{
+        width: 85%;
+    }
 }
